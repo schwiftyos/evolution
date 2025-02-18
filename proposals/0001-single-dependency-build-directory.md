@@ -19,7 +19,7 @@ Currently:
 
 ## Proposed solution
 
-Create a single system-wide dependency directory that contains all the dependency build outputs ever fetched.
+Create a single system-wide dependency directory that contains all the dependency build outputs ever fetched and compiled.
 
 ## Detailed design
 
