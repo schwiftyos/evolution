@@ -14,7 +14,7 @@ Project compilation performance is a core feature of development. The problem is
 
 Currently:
 - projects need to compile the build output for their dependencies if they haven't already
-- build output is stored in the project's local `.build` directory and only ever access by the individual project
+- build output is stored in the project's local `.build` directory and only ever accessed by the individual project
 - you need to fetch the dependencies and compile the build output of every dependency for every project
 
 ## Proposed solution
