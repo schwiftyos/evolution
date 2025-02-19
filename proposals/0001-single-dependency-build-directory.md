@@ -23,11 +23,13 @@ Create a single system-wide dependency directory that contains all the dependenc
 
 ## Detailed design
 
-Proposed build directory path: `/build` or `/usr/build`
+Proposed build directory path: `/build/` or `/usr/build/`
 
 Swift shared objects (dynamic products) can be put in `/usr/lib/` when it would be useful to do so.
 
 The `swift package clean` will behave the same (cleaning the local `.build` directory), however we will need to introduce new commands to further clean dependency build outputs in the proposed build directory and remove stale output.
+
+We would need to prioritize the local build output over the proposed build directory because anyone can declare compilation flags which can alter the behavior of the built results. The proposed build directory will contain the default output if it were built as configured (`Package.swift`).
 
 ### Patches
 
