@@ -29,7 +29,7 @@ Swift shared objects (dynamic products) can be put in `/usr/lib/` when it would 
 
 The `swift package clean` will behave the same (cleaning the local `.build` directory), however we will need to introduce new commands to further clean dependency build outputs in the proposed build directory and remove stale output.
 
-We would need to prioritize the local build output over the proposed build directory because anyone can declare compilation flags which can alter the behavior of the built results. The proposed build directory will contain the default output if it were built as configured (`Package.swift`).
+We would need to prioritize the local build output over the proposed build directory because anyone can declare compilation flags which can alter the behavior of the built results. The proposed build directory will contain the default output if it were built as-is (taking into account `Package.swift`).
 
 ### Patches
 
