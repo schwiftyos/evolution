@@ -1,6 +1,6 @@
 # Single dependency build directory
 
-* Proposal: [SE-0001](0001-single-dependency-build-directory.md)
+* Proposal: [SOE-0001](0001-single-dependency-build-directory.md)
 * Authors: [RandomHashTags](https://github.com/RandomHashTags)
 * Status: **Awaiting implementation**
 
