@@ -1,1 +1,2 @@
-CODEOWNERS LICENSE README.md proposals/0000-demo.md @schwiftyos/*
+* @schwiftyos/evomanagers
+proposals/0000-demo.md @schwiftyos/evomanagers
