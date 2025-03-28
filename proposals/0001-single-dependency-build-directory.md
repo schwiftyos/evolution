@@ -15,6 +15,7 @@ Project compilation performance is a core feature of development. The problem is
 Currently:
 - build output is stored in the project's local `.build` directory and only ever accessed by the individual project
 - fetching and compilation of every dependency is required for every Swift project (located in the project's local `.build` directory)
+- recompilation of the project is required when switching from regular builds to a test build
 
 ## Proposed solution
 
